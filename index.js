@@ -30,6 +30,11 @@ app.get('/', (req, res) => {
     res.send('Hello World');
 });
 
+
+app.get('/test', (req, res) => {
+    res.send('Testing');
+});
+
 app.get('/open/:email/:password/:brokerId/:postype/:instrument/:volume', async (req, res) => {
     try {
         // {
