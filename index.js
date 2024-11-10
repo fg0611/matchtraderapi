@@ -1,5 +1,4 @@
 // app.js
-
 const express = require('express');
 const cors = require('cors');
 
@@ -22,7 +21,9 @@ app.use(function (req, res, next) {
     next();
 });
 
-const baseUrl = process.env.PLATFORM_URL;
+const baseUrl = process.env.MTR_URL;
+
+console.log(baseUrl)
 
 const axios = require("axios");
 
